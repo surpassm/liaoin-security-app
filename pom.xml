@@ -70,8 +70,8 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/surpassm/liaoin-security-app</url>
-        <connection>https://github.com/surpassm/liaoin-security-app.git</connection>
+        <url>https://github.com/surpassm/liaoin-security-pc</url>
+        <connection>https://github.com/surpassm/liaoin-security-pc.git</connection>
         <developerConnection>https://github.com/surpassm</developerConnection>
     </scm>
     <developers>
@@ -81,4 +81,19 @@
             <url>https://github.com/surpassm</url>
         </developer>
     </developers>
+    <distributionManagement>
+        <snapshotRepository>
+            <!-- 这个id需要在setting.xml中设置  -->
+            <id>sonatype-nexus-snapshots</id>
+            <name>OSS Snapshots Repository</name>
+            <!-- 这里的url就是Issue中回复的snapshots 的repo地址-->
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>OSS Staging Repository</name>
+            <!-- 这里的url就是Issue中回复的staging 的repo地址-->
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+    </distributionManagement>
 </project>
